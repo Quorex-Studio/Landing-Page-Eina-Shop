@@ -8,7 +8,7 @@ Landing page para **EINA SHOP**, tienda de maquillaje, skincare y accesorios ubi
 ## ✦ Stack
 - HTML5 + CSS3 vanilla
 - JavaScript puro
-- Deploy en Vercel
+- Deploy en Vercel.
 
 ## ✦ Identidad visual
 - **Tipografía:** Cormorant Garamond (títulos) · Source Sans 3 (cuerpo)
