@@ -4,10 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EINA SHOP — Maquillaje & Belleza | Margarita</title>
-  
+
+  <!-- SEO -->
+  <meta name="description" content="EINA SHOP — Tienda premium de skincare y maquillaje K-Beauty en Isla Margarita, Venezuela. Productos coreanos auténticos, consultoría de belleza personalizada y envío a toda la isla.">
+  <meta name="keywords" content="skincare, maquillaje, K-beauty, Corea, Isla Margarita, Venezuela, cosméticos, belleza, cuidado de la piel, EINASHOP">
+  <meta name="author" content="EINA SHOP">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://einashop.vercel.app">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/isotipo.png">
+  <link rel="apple-touch-icon" href="assets/isotipo.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://einashop.vercel.app">
+  <meta property="og:title" content="EINA SHOP — Maquillaje & Belleza | Margarita">
+  <meta property="og:description" content="Tu destino de belleza coreana en Isla Margarita. Skincare y maquillaje premium con consultoría personalizada.">
+  <meta property="og:image" content="https://einashop.vercel.app/assets/logotipo_slogan.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_VE">
+  <meta property="og:site_name" content="EINA SHOP">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://einashop.vercel.app">
+  <meta name="twitter:title" content="EINA SHOP — Maquillaje & Belleza | Margarita">
+  <meta name="twitter:description" content="Tu destino de belleza coreana en Isla Margarita. Skincare y maquillaje premium con consultoría personalizada.">
+  <meta name="twitter:image" content="https://einashop.vercel.app/assets/logotipo_slogan.png">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Preload font files for faster loading -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap">
   
   <style>
     :root {
@@ -25,6 +58,22 @@
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
+
+    /* Screen reader only */
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+
+    /* Skip link */
+    .skip-link {
+      position: absolute; top: -40px; left: 0;
+      background: var(--wine); color: var(--white);
+      padding: 8px 16px; z-index: 999;
+      transition: top 0.3s;
+    }
+    .skip-link:focus { top: 0; }
 
     body {
       background: var(--cream);
@@ -405,6 +454,9 @@
 </head>
 <body>
 
+<!-- Skip Link -->
+<a href="#productos" class="skip-link">Saltar al contenido</a>
+
 <!-- NAV -->
 <nav class="reveal">
   <a href="#" class="nav-logo">
@@ -459,54 +511,54 @@
 
   <div class="product-grid">
     <!-- Product 1 -->
-    <div class="product-card reveal" style="transition-delay: 0.1s;" onclick="contactProduct('APLB Sérum Retinol + Vit C + Vit E')">
+    <div class="product-card reveal" style="transition-delay: 0.1s;" role="button" tabindex="0" aria-label="Comprar APLB Glow Recovery Serum" onclick="contactProduct('APLB Sérum Retinol + Vit C + Vit E')" onkeydown="if(event.key==='Enter')this.click()">
       <div class="product-img-box">
         <span class="badge">Bestseller</span>
-        <img src="https://images.koreacosmetics.bn.co.il/wp-content/uploads/2022/11/APLB-Retinol-Vitamin-C-Vitamin-E-Ampoule-Serum-40ml.jpg" alt="APLB Serum" onerror="this.src='https://placehold.co/400x500/f4ece4/d39882?text=APLB+Serum'">
+        <img src="assets/products/aplb-serum.svg" alt="APLB Glow Recovery Serum con Retinol, Vitamina C y E" loading="lazy" width="400" height="500">
       </div>
       <div class="product-info">
         <span class="product-brand">APLB · Korea</span>
         <h3 class="product-title">Glow Recovery Serum</h3>
-        <p class="product-price">$15 USD <span class="btn-buy"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></p>
+        <p class="product-price">$15 USD <span class="btn-buy" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></p>
       </div>
     </div>
 
     <!-- Product 2 -->
-    <div class="product-card reveal" style="transition-delay: 0.2s;" onclick="contactProduct('Heimish All Clean Balm')">
+    <div class="product-card reveal" style="transition-delay: 0.2s;" role="button" tabindex="0" aria-label="Comprar Heimish Ceramide Full Cream" onclick="contactProduct('Heimish All Clean Balm')" onkeydown="if(event.key==='Enter')this.click()">
       <div class="product-img-box">
         <span class="badge dark">Essential</span>
-        <img src="https://makeupstash.pk/wp-content/uploads/2021/03/heimish-all-clean-balm.jpg" alt="Heimish Balm" onerror="this.src='https://placehold.co/400x500/f4ece4/d39882?text=Heimish+Balm'">
+        <img src="assets/products/heimish-balm.jpg" alt="Heimish Ceramide Full Cream hidratante" loading="lazy" width="400" height="500">
       </div>
       <div class="product-info">
         <span class="product-brand">Heimish</span>
         <h3 class="product-title">Ceramide Full Cream</h3>
-        <p class="product-price">$22 USD <span class="btn-buy"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></p>
+        <p class="product-price">$22 USD <span class="btn-buy" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></p>
       </div>
     </div>
 
     <!-- Product 3 -->
-    <div class="product-card reveal" style="transition-delay: 0.3s;" onclick="contactProduct('Sheglam Jelly Tint')">
+    <div class="product-card reveal" style="transition-delay: 0.3s;" role="button" tabindex="0" aria-label="Comprar Sheglam Velvet Lip Tint" onclick="contactProduct('Sheglam Jelly Tint')" onkeydown="if(event.key==='Enter')this.click()">
       <div class="product-img-box">
         <span class="badge">Viral</span>
-        <img src="https://lracosmetics.com/cdn/shop/files/SHEGLAM_Jelly_Wow_Lip_Oil_-_Day_Dreamer.jpg" alt="Sheglam Jelly" onerror="this.src='https://placehold.co/400x500/f4ece4/d39882?text=Sheglam'">
+        <img src="assets/products/sheglam-tint.svg" alt="Sheglam Velvet Lip Tint larga duración" loading="lazy" width="400" height="500">
       </div>
       <div class="product-info">
         <span class="product-brand">Sheglam</span>
         <h3 class="product-title">Velvet Lip Tint</h3>
-        <p class="product-price">$8 USD <span class="btn-buy"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></p>
+        <p class="product-price">$8 USD <span class="btn-buy" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></p>
       </div>
     </div>
 
     <!-- Product 4 -->
-    <div class="product-card reveal" style="transition-delay: 0.4s;" onclick="contactProduct('COSRX Protector Solar')">
+    <div class="product-card reveal" style="transition-delay: 0.4s;" role="button" tabindex="0" aria-label="Comprar COSRX Aloe Water Cream" onclick="contactProduct('COSRX Protector Solar')" onkeydown="if(event.key==='Enter')this.click()">
       <div class="product-img-box">
         <span class="badge dark">New</span>
-        <img src="https://www.cosrx.com/cdn/shop/files/COSRX_All_Day_Comfort_Sun_Cream_SPF50_PA.jpg" alt="COSRX SPF" onerror="this.src='https://placehold.co/400x500/f4ece4/d39882?text=COSRX'">
+        <img src="assets/products/cosrx-spf.svg" alt="COSRX Aloe Water Cream hidratante y protector solar" loading="lazy" width="400" height="500">
       </div>
       <div class="product-info">
         <span class="product-brand">COSRX</span>
         <h3 class="product-title">Aloe Water Cream</h3>
-        <p class="product-price">$20 USD <span class="btn-buy"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></p>
+        <p class="product-price">$20 USD <span class="btn-buy" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></p>
       </div>
     </div>
   </div>
@@ -516,13 +568,13 @@
 <section class="brand-story">
   <div class="bento-grid reveal">
     <div class="bento-item tall">
-      <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=600&auto=format&fit=crop" alt="Natural beauty setup">
+      <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=600&auto=format&fit=crop" alt="Natural beauty setup" loading="lazy" width="600" height="800">
     </div>
     <div class="bento-item top-right">
-      <img src="https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=400&auto=format&fit=crop" alt="Skincare bottles">
+      <img src="https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=400&auto=format&fit=crop" alt="Skincare bottles" loading="lazy" width="400" height="400">
     </div>
     <div class="bento-item bottom-right">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=400&auto=format&fit=crop" alt="Margarita Island beach">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=400&auto=format&fit=crop" alt="Margarita Island beach" loading="lazy" width="400" height="400">
     </div>
   </div>
   <div class="story-content reveal" style="transition-delay: 0.2s;">
@@ -576,21 +628,25 @@
     <div class="contact-form">
       <div class="form-row">
         <div class="input-grp">
-          <input type="text" id="f-name" placeholder="Name">
+          <label for="f-name" class="sr-only">Nombre</label>
+          <input type="text" id="f-name" placeholder="Name" required autocomplete="name">
         </div>
         <div class="input-grp">
-          <input type="text" id="f-user" placeholder="Instagram or WhatsApp">
+          <label for="f-user" class="sr-only">Instagram o WhatsApp</label>
+          <input type="text" id="f-user" placeholder="Instagram or WhatsApp" autocomplete="url">
         </div>
       </div>
       <div class="form-row">
         <div class="input-grp">
-          <input type="text" id="f-subject" placeholder="Inquiry Type (Skincare, Makeup, etc...)">
+          <label for="f-subject" class="sr-only">Tipo de consulta</label>
+          <input type="text" id="f-subject" placeholder="Inquiry Type (Skincare, Makeup, etc...)" autocomplete="off">
         </div>
       </div>
       <div class="input-grp">
-        <textarea id="f-msg" placeholder="Tell us how we can help you today..."></textarea>
+        <label for="f-msg" class="sr-only">Mensaje</label>
+        <textarea id="f-msg" placeholder="Tell us how we can help you today..." rows="3"></textarea>
       </div>
-      <button class="btn-submit" onclick="handleFormSubmit(this)">Send Message</button>
+      <button type="button" class="btn-submit" onclick="handleFormSubmit(this)">Send Message</button>
     </div>
   </div>
 </section>
@@ -610,15 +666,15 @@
       <strong>Explore</strong>
       <a href="#productos">Shop All / Catalog</a>
       <a href="#contacto">Consultations</a>
-      <a href="#">Shipping & Returns</a>
-      <a href="#">About Us</a>
+      <a href="https://wa.me/584141844511" target="_blank" rel="noopener">Shipping Info</a>
+      <a href="https://www.instagram.com/einashop_v" target="_blank" rel="noopener">Follow Us</a>
     </div>
     <div class="footer-nav">
       <strong>Newsletter</strong>
       <p style="margin-bottom: 12px; line-height: 1.4;">Only secrets and exclusive treats.</p>
       <div style="display: flex; gap: 8px;">
-        <input type="email" placeholder="email@address.com" style="flex: 1; padding: 10px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 4px; outline: none; font-size: 0.8rem;">
-        <button style="background: var(--wine); color: white; border: none; padding: 0 16px; border-radius: 4px; font-weight: 600; font-size: 0.8rem;">JOIN</button>
+        <input type="email" id="newsletter-email" placeholder="email@address.com" style="flex: 1; padding: 10px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 4px; outline: none; font-size: 0.8rem;">
+        <button onclick="handleNewsletterSignup()" style="background: var(--wine); color: white; border: none; padding: 0 16px; border-radius: 4px; font-weight: 600; font-size: 0.8rem; cursor: pointer;">JOIN</button>
       </div>
     </div>
   </div>
@@ -640,14 +696,14 @@
     const user = document.getElementById('f-user').value || '';
     const asunto = document.getElementById('f-subject').value || '';
     const mensaje = document.getElementById('f-msg').value || '';
-    
+
     let texto = `Hola! Soy ${nombre} ${user ? '('+user+')' : ''}.\n`;
     if(asunto) texto += `Asunto: ${asunto}\n`;
     texto += `${mensaje}\n`;
 
     const url = `https://wa.me/584141844511?text=${encodeURIComponent(texto)}`;
     window.open(url, '_blank');
-    
+
     // UI Feedback
     const originalText = btn.textContent;
     btn.textContent = 'Redirecting to WhatsApp...';
@@ -670,6 +726,97 @@
   }, { threshold: 0.15 });
 
   reveals.forEach(el => observer.observe(el));
+
+  // Newsletter signup (redirects to WhatsApp for now)
+  function handleNewsletterSignup() {
+    const email = document.getElementById('newsletter-email').value;
+    if (!email) return;
+    const msg = encodeURIComponent(`Hola! Quiero suscribirme al newsletter de EINA SHOP. Mi email es: ${email}`);
+    window.open(`https://wa.me/584141844511?text=${msg}`, '_blank');
+    document.getElementById('newsletter-email').value = '';
+    alert('¡Gracias por suscribirte! Te contactaremos pronto 💖');
+  }
+</script>
+
+<!-- Structured Data: LocalBusiness + Products -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "EINA SHOP",
+  "description": "Tienda premium de skincare y maquillaje K-Beauty en Isla Margarita, Venezuela",
+  "url": "https://einashop.vercel.app",
+  "image": "https://einashop.vercel.app/assets/logotipo_slogan.png",
+  "telephone": "+584141844511",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Isla Margarita",
+    "addressCountry": "VE"
+  },
+  "sameAs": [
+    "https://www.instagram.com/einashop_v",
+    "https://wa.me/message/EMFTZP3DN2D2E1"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "K-Beauty Products",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "name": "APLB Glow Recovery Serum",
+        "description": "Sérum con Retinol, Vitamina C y Vitamina E para recuperación de luminosidad",
+        "image": "https://einashop.vercel.app/assets/products/aplb-serum.svg",
+        "brand": { "@type": "Brand", "name": "APLB" },
+        "offers": {
+          "@type": "Offer",
+          "price": "15.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "Heimish Ceramide Full Cream",
+        "description": "Crema hidratante con ceramidas para hidratación profunda",
+        "image": "https://einashop.vercel.app/assets/products/heimish-balm.jpg",
+        "brand": { "@type": "Brand", "name": "Heimish" },
+        "offers": {
+          "@type": "Offer",
+          "price": "22.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "Sheglam Velvet Lip Tint",
+        "description": "Tinte de labios velvet de larga duración",
+        "image": "https://einashop.vercel.app/assets/products/sheglam-tint.svg",
+        "brand": { "@type": "Brand", "name": "Sheglam" },
+        "offers": {
+          "@type": "Offer",
+          "price": "8.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "Product",
+        "name": "COSRX Aloe Water Cream",
+        "description": "Crema hidratante de aloe vera con protección solar",
+        "image": "https://einashop.vercel.app/assets/products/cosrx-spf.svg",
+        "brand": { "@type": "Brand", "name": "COSRX" },
+        "offers": {
+          "@type": "Offer",
+          "price": "20.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ]
+  }
+}
 </script>
 
 </body>

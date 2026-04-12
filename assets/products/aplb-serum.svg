@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+  <rect fill="#f4ece4" width="400" height="500"/>
+  <text x="200" y="230" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="28" fill="#641a29" font-weight="600">APLB</text>
+  <text x="200" y="265" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-size="14" fill="#888" letter-spacing="0.15em">GLOW RECOVERY SERUM</text>
+  <ellipse cx="200" cy="310" rx="40" ry="40" fill="#d39882" opacity="0.3"/>
+</svg>
