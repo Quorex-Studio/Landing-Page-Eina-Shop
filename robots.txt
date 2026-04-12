@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://einashop.vercel.app/sitemap.xml
