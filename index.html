@@ -687,7 +687,7 @@
   // Dynamic WhatsApp Product Direct Link
   function contactProduct(name) {
     const msg = encodeURIComponent(`Hola! Me interesa el producto: ${name}. ¿Tienen disponibilidad?`);
-    window.open(`https://wa.me/584141844511?text=${msg}`, '_blank');
+    window.open(`https://wa.me/584248500570?text=${msg}`, '_blank');
   }
 
   // Handle Form Submission -> WhatsApp
@@ -701,7 +701,7 @@
     if(asunto) texto += `Asunto: ${asunto}\n`;
     texto += `${mensaje}\n`;
 
-    const url = `https://wa.me/584141844511?text=${encodeURIComponent(texto)}`;
+    const url = `https://wa.me/584248500570?text=${encodeURIComponent(texto)}`;
     window.open(url, '_blank');
 
     // UI Feedback
@@ -732,7 +732,7 @@
     const email = document.getElementById('newsletter-email').value;
     if (!email) return;
     const msg = encodeURIComponent(`Hola! Quiero suscribirme al newsletter de EINA SHOP. Mi email es: ${email}`);
-    window.open(`https://wa.me/584141844511?text=${msg}`, '_blank');
+    window.open(`https://wa.me/584248500570?text=${msg}`, '_blank');
     document.getElementById('newsletter-email').value = '';
     alert('¡Gracias por suscribirte! Te contactaremos pronto 💖');
   }
